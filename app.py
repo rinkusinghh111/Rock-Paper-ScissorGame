@@ -1,7 +1,7 @@
 """
 ╔═══════════════════════════════════════════════════════════════════════╗
 ║          ROCK · PAPER · SCISSORS  ──  PRO EDITION                     ║
-║          Developed by Stuti Gupta                                     ║
+║          Developed by Rinku Kumari                                     ║
 ║                                                                       ║
 ║  SPLIT-SCREEN LAYOUT:                                                 ║
 ║   LEFT  → AI panel  (shows AI move as animated gesture art)           ║
@@ -617,8 +617,8 @@ cap, cam_idx = get_camera(0)
 if cap is None:
     print("[ERROR] No camera."); exit(1)
 
-cv2.namedWindow("RPS PRO  |  Stuti Gupta", cv2.WINDOW_NORMAL)
-cv2.resizeWindow("RPS PRO  |  Stuti Gupta", WIN_W, WIN_H)
+cv2.namedWindow("RPS PRO  |  Rinku Kumari", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("RPS PRO  |  Rinku Kumari", WIN_W, WIN_H)
 
 # ────────────────────────────────────────────────────────────────────────────
 #  MAIN LOOP
@@ -633,7 +633,7 @@ prev_time  = time.time()
 fail_count = 0
 
 print("=" * 58)
-print("  RPS PRO EDITION  |  by Stuti Gupta")
+print("  RPS PRO EDITION  |  by Rinku Kumari")
 print("  SPACE → lock move  |  R → restart  |  N → cam  |  ESC")
 print("=" * 58 + "\n")
 
@@ -679,7 +679,7 @@ while True:
             "detections": detections, "_t": now,
         })
         draw_input_screen(canvas, inp_str, inp_err, now)
-        cv2.imshow("RPS PRO  |  Stuti Gupta", canvas)
+        cv2.imshow("RPS PRO  |  Rinku Kumari", canvas)
         key = cv2.waitKey(1) & 0xFF
         if key == 27: break
         elif key == 13:   # ENTER
@@ -720,7 +720,7 @@ while True:
         cyc = WIN_H - 50 - 38
         put_centered(canvas, msg, cxc, cyc, fs=0.60, colour=col)
 
-        cv2.imshow("RPS PRO  |  Stuti Gupta", canvas)
+        cv2.imshow("RPS PRO  |  Rinku Kumari", canvas)
         key = cv2.waitKey(1) & 0xFF
         if key == 27: break
         elif key == ord(' '):
@@ -740,7 +740,7 @@ while True:
     # ── COUNTDOWN ────────────────────────────────────────────────
     elif ph == PHASE_COUNTDOWN:
         canvas = build_frame(raw_frame, state)
-        cv2.imshow("RPS PRO  |  Stuti Gupta", canvas)
+        cv2.imshow("RPS PRO  |  Rinku Kumari", canvas)
         cv2.waitKey(1)
 
         elapsed = now - state["countdown_start"]
@@ -764,7 +764,7 @@ while True:
     # ── RESULT ───────────────────────────────────────────────────
     elif ph == PHASE_RESULT:
         canvas = build_frame(raw_frame, state)
-        cv2.imshow("RPS PRO  |  Stuti Gupta", canvas)
+        cv2.imshow("RPS PRO  |  Rinku Kumari", canvas)
         cv2.waitKey(1)
 
         if now - state["result_timer"] >= RESULT_TIME:
@@ -780,7 +780,7 @@ while True:
     # ── GAME OVER ────────────────────────────────────────────────
     elif ph == PHASE_GAME_OVER:
         canvas = build_frame(raw_frame, state)
-        cv2.imshow("RPS PRO  |  Stuti Gupta", canvas)
+        cv2.imshow("RPS PRO  |  Rinku Kumari", canvas)
         key = cv2.waitKey(1) & 0xFF
         if key == 27: break
         elif key == ord('r'):
@@ -793,4 +793,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
-print("\n[DONE]  Thanks for playing!  —  Stuti Gupta\n")
+print("\n[DONE]  Thanks for playing!  —  Rinku Kumari\n")
