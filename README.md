@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 # OpenCV Rock Paper Scissors AI
 
@@ -32,3 +33,7 @@ python app.py
 # Rock-Paper-Scissor-Game-through-OpenCV
 An AI-powered computer vision project that uses a live webcam feed to accurately detect 'Rock', 'Paper', or 'Scissors' hand gestures in real-time. Built using OpenCV for video capture and ultralytics YOLO for lightning-fast object detection
 >>>>>>> 7d81ca82d9ac157300b200d354654efe34146071
+=======
+# Rock-Paper-ScissorGame
+An AI-powered computer vision project that uses a live webcam feed to accurately detect 'Rock', 'Paper', or 'Scissors' hand gestures in real-time. Built using OpenCV for video capture and ultralytics YOLO for lightning-fast object detection
+>>>>>>> 837e58bae697297c42eb6e47b12fdcc309422969
