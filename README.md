@@ -2,8 +2,8 @@
 
 # OpenCV Rock Paper Scissors AI
 
-**Developed by Stuti Gupta**
-**GitHub:** [RockPaperScissors-OpenCV](https://github.com/stuticoder123/Rock-Paper-Scissor-Game-through-OpenCV.git)
+**Developed by Rinku Kumari**
+**GitHub:** [RockPaperScissors-OpenCV](https://github.com/rinkusinghh111/Rock-Paper-ScissorGame)
 
 A real-time Rock, Paper, Scissors gesture recognition system built with Python, OpenCV, and YOLO object detection.
 
